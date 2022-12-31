@@ -7,6 +7,7 @@ function hideModal(){
     modal.classList.add('hidden');
     overlay.classList.toggle('hidden');
 }
+
 // For loop is a control structure that will automate any repetitive task, thus it will automate the task of adding eventlistener to each button individually
 for(let i = 0; i<showModalArray.length; i++){
     showModalArray[i].addEventListener('click', function(){
