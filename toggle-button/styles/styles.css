@@ -33,8 +33,12 @@ body {
     position: absolute;
     left: 6px;
     bottom: 6px;
-    z-index: 10;
+    /* timing */
     transition: 0.4s;
+    display: inline;
+}
+.sliding-animation {
+    transform: translateX(8.3rem);
 }
 
 .toggle-switch:hover {
