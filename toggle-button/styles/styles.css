@@ -12,6 +12,8 @@ body {
     display: grid;
     place-items: center;
     height: 100vh;
+    /* transition time */
+    transition: 0.4s;
 }
 
 .toggle-container {
@@ -22,7 +24,7 @@ body {
     position: relative;
     display: inline-block;
     padding: 0.5rem;
-    /* timting */
+    /* transition time */
     transition: 0.4s;
 }
 .toggle-switch {
@@ -33,7 +35,7 @@ body {
     position: absolute;
     left: 6px;
     bottom: 6px;
-    /* timing */
+    /* transition time */
     transition: 0.4s;
     display: inline;
 }
