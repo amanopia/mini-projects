@@ -1,3 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
 body {
-    background-color: blue;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.toggle-container {
+    height: 6.7rem;
+    width: 15rem;
+    background-color: rgb(123, 123, 123);
+    border-radius: 55px;
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem;
+    /* timting */
+    transition: 0.4s;
+}
+.toggle-switch {
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    background-color: #fff;
+    position: absolute;
+    left: 6px;
+    bottom: 6px;
+    z-index: 10;
+    transition: 0.4s;
+}
+
+.toggle-switch:hover {
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 10px #1f1f1f);
+}
+
+.green-background {
+    background-color: #02ff3d;
 }
