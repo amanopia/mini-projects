@@ -20,6 +20,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* margin */
+    margin-bottom: 3rem;
 }
 
 .navigation :nth-child(2){
