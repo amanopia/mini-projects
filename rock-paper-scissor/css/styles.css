@@ -17,3 +17,7 @@ body {
 h2 {
     font-weight: 400;
 }
+
+button:hover {
+    cursor: pointer;
+}
