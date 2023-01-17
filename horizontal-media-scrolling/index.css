@@ -34,6 +34,7 @@ header h1 {
 }
 img {
     /* height: 10rem; */
+    width: 40%;
     object-fit: cover;
 }
 
@@ -80,4 +81,18 @@ img {
 
 .snaps-inline > * {
     scroll-snap-align: start;
+}
+
+/* Group scrolling */
+.media-scroller--with-groups {
+    /* border: 2px solid hotpink; */
+    grid-auto-columns: 85%;
+    /* This makes sure that theh container is 100% of its parent */
+}
+
+.media-group {
+    /* border: 2px solid limegreen; */
+    display: grid;
+    grid-auto-flow: column; /* liines up all the groups*/
+    gap: 1rem;
 }
