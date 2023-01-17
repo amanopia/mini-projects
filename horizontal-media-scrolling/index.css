@@ -62,6 +62,7 @@ img {
     grid-template-rows: min-content;
     /* aligns the items correctly, by setting element height to the minimum element's height */
     gap: 1rem;
+    box-shadow: var(--shadow-5);
 }
 
 .media-element > img {
@@ -69,4 +70,14 @@ img {
     height: 10rem;
     /* inline size is the logical property for width */
     object-fit: cover;
+}
+
+.snaps-inline {
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 0.5rem;
+    /* this property helps having a padding on the container on which scroll is being implemented which would other wise would have not been visible */
+}
+
+.snaps-inline > * {
+    scroll-snap-align: start;
 }
