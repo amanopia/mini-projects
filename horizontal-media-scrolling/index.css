@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+/* Look into open prop */
 
 *{
     padding: 0;
@@ -12,12 +16,16 @@
 
 body {
     font-family: "Poppins", sans-serif;
-    background-color: rgb(28, 28, 28);
+    background-color: rgb(53, 50, 86);
+    color: #fff;
 }
 
 header {
     margin: 0 auto;
     background-image: linear-gradient(to right, #f6bd11, #ff6db9, #9830ff);
+    margin-bottom: 1rem;
+    display: grid;
+    place-items: center;
 }
 header h1 {
     padding: 4rem;
@@ -25,5 +33,40 @@ header h1 {
     color: #fff;
 }
 img {
+    /* height: 10rem; */
+    object-fit: cover;
+}
+
+/* creating scroll effect */
+.media-scroller {
+    display: grid;
+    gap: var(--size-3);
+    grid-auto-flow: column;
+    /* grid-template-columns: repeat(10, 1fr); */
+    /* grid-auto-flow causes every child element to become a column, instead of a row like they traditionally would */
+    /* This also helps us with automatically defining everything as columns rather than doing, grid-template-columns: repeat(4, 1fr)*/
+    grid-auto-columns: 40%;
+    /* use a number that can't divide 100 evenly because then there is extra content that falls off the page*/
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    padding: 1rem;
+    /* Doesn't scroll the whole page forcefully */
+}
+
+.media-element {
+    padding: var(--size-3);
+    background: #83838340;
+    border-radius: 4px;
+    display: grid;
+    grid-template-rows: min-content;
+    /* aligns the items correctly, by setting element height to the minimum element's height */
+    gap: 1rem;
+}
+
+.media-element > img {
+    inline-size: 100%;
     height: 10rem;
+    /* inline size is the logical property for width */
+    object-fit: cover;
 }
