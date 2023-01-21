@@ -26,7 +26,7 @@ var run = function() {
       col(x, y, R(x,y,t), G(x,y,t), B(x,y,t));
     }
   }
-  t = t + 0.020;
+  t = t + 0.010;
   window.requestAnimationFrame(run);
 }
 

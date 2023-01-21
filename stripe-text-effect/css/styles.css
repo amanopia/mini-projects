@@ -6,8 +6,8 @@
 
 * {
     margin: 0;
-    padding:
 }
+
 body {
     font-family: "Poppins";
 }
@@ -27,5 +27,18 @@ canvas {
     --max-width: 50rem;
     width: min(100% - 2rem, var(--max-width));
     margin-inline: auto;
+    padding: 5rem;
+}
+
+.hero {
+    position: relative;
+    padding: 1em;
+}
+
+.canvas-container {
+    position: absolute;
+    inset: 0;
+    height: 50vh;
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0% 100%);
 }
 
