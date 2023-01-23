@@ -9,24 +9,36 @@
     box-sizing: border-box;
 }
 
+:root {
+    --container-width: 85%;
+}
+
 body {
     transition: 0.4s;
+    width: 85%;
+    margin: 0 auto;
 }
 
 /* NAVIGATION */
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 1rem auto;
 }
 nav h1 {
     font-family: "DM Serif Display";
     font-weight: 800;
 }
 
+nav p {
+    font-family: "Poppins";
+    font-weight: 600;
+}
 .toggle-container {
     border: 1px solid black;
     height: 2rem;
-    width: 6rem;
+    width: 5rem;
     border-radius: 20px;
 
     position: relative;
@@ -50,5 +62,4 @@ nav h1 {
 .dark-mode-color {
     background-color: #4600ea;
     color: #fff;
-    
 }
