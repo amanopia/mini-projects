@@ -4,19 +4,67 @@
     padding: 0;
     list-style: none;
     margin: 0;
+    border-style: none;
+    box-sizing: border-box;
 }
 
 body {
     font-family: Poppins;
     background-image: linear-gradient(to right, #be0cff, #11c8e4);
     color: #fff;
-
-    display: grid;
-    place-items: center;
-    height: 100vh;
 }
 
+section {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 110vh; 
+    /* Give a lot of room to work with */
+}
 p {
     font-weight: 400;
 }
 
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-30%);
+    transition: all 0.4s; /* fade in animation*/;
+}
+
+/* @media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+} */
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    /* background-color: blue; */
+}
+
+.container {
+    display: flex;
+    gap: 0.2rem;
+    justify-content: center;
+    min-height: 70vh;
+}
+.box {
+    height: 5rem;
+    width: 5rem;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.box:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.box:nth-child(3){
+    transition-delay: 300ms;
+}
+
+.box:nth-child(4){
+    transition-delay: 400ms;
+}

@@ -1,3 +1,10 @@
+// selecting own elelments
+const heroTitle = document.querySelector('.hero-title');
+const heroTitleOverlay = document.querySelector("span");
+
+heroTitleOverlay.innerText = heroTitle.textContent;
+
+// following is from 
 var c = document.getElementById('canv');
 var $ = c.getContext('2d');
 
