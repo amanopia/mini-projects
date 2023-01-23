@@ -11,7 +11,7 @@
 
 :root {
     --container-width: 85%;
-    --dark-mode-color: #4600ea;
+    --dark-mode-color: #222223;
     --green-background: #02ff3d;
 }
 
@@ -21,6 +21,9 @@ body {
     margin: 0 auto;
 }
 
+a {
+    color: inherit;
+}
 /* NAVIGATION */
 nav {
     display: flex;
