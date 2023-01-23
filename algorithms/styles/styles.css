@@ -11,11 +11,13 @@
 
 :root {
     --container-width: 85%;
+    --dark-mode-color: #4600ea;
+    --green-background: #02ff3d;
 }
 
 body {
     transition: 0.4s;
-    width: 85%;
+    width: var(--container-width);
     margin: 0 auto;
 }
 
@@ -35,8 +37,10 @@ nav p {
     font-family: "Poppins";
     font-weight: 600;
 }
+
+/* Toggle switch */
+
 .toggle-container {
-    border: 1px solid black;
     height: 2rem;
     width: 5rem;
     border-radius: 20px;
@@ -44,22 +48,36 @@ nav p {
     position: relative;
     /* transition-time */
     transition: all 0.4s;
+    background-color: rgb(123, 123, 123);
 }
 
 .toggle-switch {
-    height: 1.9rem;
-    width: 1.9rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    left: 3px; 
+    bottom: 4px;
     border-radius: 50%;
-    background: rgba(0, 0, 255, 0.194);
-    z-index: 5;
+    background: #fff;
     position: absolute;
+    display: inline;
+    transition: all 0.4s;
 }
 
 .toggle-switch:hover {
     cursor: pointer;
+    filter: drop-shadow(0px 0px 5px #1f1f1f);
+}
+
+.sliding-animation {
+    transform: translateX(3rem);
 }
 
 .dark-mode-color {
-    background-color: #4600ea;
+    background-color: var(--dark-mode-color);
     color: #fff;
+}
+
+.green-background {
+    background-color: var(--green-color);
+    background-color: #02ff3d;
 }
