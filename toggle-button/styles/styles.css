@@ -16,9 +16,6 @@ body {
     transition: 0.4s;
 }
 
-a:any-link {
-    color: #000;
-}
 .toggle-container {
     height: 6.7rem;
     width: 15rem;
