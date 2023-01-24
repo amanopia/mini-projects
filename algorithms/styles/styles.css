@@ -132,7 +132,7 @@ nav p {
 
 /* CREATED BY */
 .created-by {
-    margin-top: 15rem;
+    margin-top: 10rem;
     font-family: "Poppins";
 }
 .created-by p {
@@ -145,7 +145,7 @@ nav p {
     font-size: var(--font-size-large);
     font-weight: 600;
     font-size: 72px;
-    background: -webkit-linear-gradient(-180deg, #ce81d8, #4c00ff, #ce81d8);
+    background: -webkit-linear-gradient(180deg, #ff0f7b, #f829ba, #ffdd00);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
