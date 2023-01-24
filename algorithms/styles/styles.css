@@ -13,8 +13,10 @@
     --container-width: 85%;
     --dark-mode-color: #222223;
     --green-background: #02ff3d;
-    --font-size: 2rem;
+    --font-size: 1.5rem;
     --font-size-large: 3rem;
+    --padding-left: 2rem;
+    --border-left: 0.3rem solid
 }
 
 body {
@@ -26,6 +28,20 @@ body {
 a {
     color: inherit;
 }
+
+
+.hidden {
+    opacity: 0;
+    transition: all 0.4s;
+    transform: translateX(-5%);
+}
+
+.show {
+    opacity: 1;
+    transition: all 0.4s;
+    transform: translateX(0); 
+}
+
 /* NAVIGATION */
 nav {
     display: flex;
@@ -59,7 +75,7 @@ nav p {
 .toggle-switch {
     height: 1.5rem;
     width: 1.5rem;
-    left: 3px; 
+    left: 5px; 
     bottom: 4px;
     border-radius: 50%;
     background: #fff;
@@ -91,7 +107,9 @@ nav p {
 .heading {
     margin-top: 7rem;
     line-height: 1;
-    width: 75%;
+    width: 85%;
+    padding-left: var(--padding-left);
+    border-left: var(--border-left) ;
 }
 .heading h1, .heading p{
     font-family: "Poppins";
@@ -114,11 +132,13 @@ nav p {
 
 /* CREATED BY */
 .created-by {
-    margin-top: 25rem;
+    margin-top: 15rem;
     font-family: "Poppins";
 }
 .created-by p {
     font-size: var(--font-size);
+    /* transition property */
+    transition-delay: 200ms;
 }
 
 .created-by h1 {
@@ -129,4 +149,18 @@ nav p {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    /* transition property */
+    transition-delay: 300ms;
+}
+
+.icon-and-heading {
+    display: flex;
+    color: inherit;
+}
+
+
+@media screen and (max-width: 600px) {
+    .created-by {
+        margin-top: 5rem;
+    }
 }
