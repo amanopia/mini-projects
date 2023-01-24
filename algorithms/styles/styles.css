@@ -16,7 +16,8 @@
     --font-size: 1.5rem;
     --font-size-large: 8.5rem;
     --padding-left: 2rem;
-    --border-left: 0.3rem solid
+    --border-left: 0.3rem solid;
+    --decs-font-size: 1.5rem;
 }
 
 body {
@@ -166,6 +167,16 @@ nav p {
     font-size: var(--font-size-large);
 }
 
+.linear-search p {
+    transition-delay: 500ms;
+    font-size: var(--decs-font-size);
+    font-weight: 200;
+    /* background: -webkit-linear-gradient(-45deg, #fffbaf, #ab2aed); */
+    background: -webkit-linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .icon-and-heading {
     display: flex;
     color: inherit;
