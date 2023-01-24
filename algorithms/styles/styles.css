@@ -14,7 +14,7 @@
     --dark-mode-color: #222223;
     --green-background: #02ff3d;
     --font-size: 1.5rem;
-    --font-size-large: 3rem;
+    --font-size-large: 8.5rem;
     --padding-left: 2rem;
     --border-left: 0.3rem solid
 }
@@ -142,7 +142,6 @@ nav p {
 }
 
 .created-by h1 {
-    font-size: var(--font-size-large);
     font-weight: 600;
     font-size: 72px;
     background: -webkit-linear-gradient(180deg, #ff0f7b, #f829ba, #ffdd00);
@@ -151,6 +150,20 @@ nav p {
     -webkit-text-fill-color: transparent;
     /* transition property */
     transition-delay: 300ms;
+}
+
+/* LINEAR SEARCH */
+.linear-search {
+    margin-top: 5rem;
+    font-family: "Poppins";
+    border-left: var(--border-left);
+    padding-left: var(--padding-left);
+    
+}
+.linear-search h1{
+    transition-delay: 400ms;
+    font-weight: 600;
+    font-size: var(--font-size-large);
 }
 
 .icon-and-heading {
