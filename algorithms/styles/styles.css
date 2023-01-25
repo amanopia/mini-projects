@@ -18,6 +18,7 @@
     --padding-left: 2rem;
     --border-left: 0.3rem solid;
     --decs-font-size: 1.5rem;
+    --code-box-color: #383839;
 }
 
 body {
@@ -26,10 +27,18 @@ body {
     margin: 0 auto;
 }
 
-a {
+a, p {
     color: inherit;
 }
 
+.light {
+    background-color: #fff;
+    color: inherit;
+}
+
+.dark {
+    background-color: var(--code-box-color);
+}
 
 .hidden {
     opacity: 0;
@@ -192,6 +201,36 @@ nav p {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.code-parent {
+    margin-top: 8rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.link {
+    font-family: "Poppins", sans-serif;
+    padding: 0.5rem 6rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    border:rgb(123, 123, 123) 1px solid;
+}
+
+.link-dark {
+    background-color: var(--dark-mode-color);
+}
+.code-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border:rgb(123, 123, 123) 1px solid;
+    border-radius: 10px;
+}
+.code-window {
+    margin-top: 1rem;
+    display: flex;
+}
+
 .icon-and-heading {
     display: flex;
     color: inherit;
