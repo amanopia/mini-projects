@@ -107,7 +107,6 @@ nav p {
 /* HEADING */
 .heading {
     margin-top: 7rem;
-    line-height: 1;
     width: 85%;
     padding-left: var(--padding-left);
     border-left: var(--border-left) ;
@@ -120,6 +119,7 @@ nav p {
 
 .heading h1 {
     font-size:4.5rem;
+    line-height: 1;
 }
 
 .heading p {
@@ -153,6 +153,20 @@ nav p {
     transition-delay: 300ms;
 }
 
+.image-and-name {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+.image-and-name img {
+    height: 10rem;
+    width: 10rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1rem solid #fff;
+    transition-delay: 400ms;
+}
 /* LINEAR SEARCH */
 .linear-search {
     margin-top: 5rem;
@@ -163,6 +177,7 @@ nav p {
 }
 .linear-search h1{
     transition-delay: 400ms;
+    line-height: 1;
     font-weight: 600;
     font-size: var(--font-size-large);
 }
@@ -172,7 +187,7 @@ nav p {
     font-size: var(--decs-font-size);
     font-weight: 200;
     /* background: -webkit-linear-gradient(-45deg, #fffbaf, #ab2aed); */
-    background: -webkit-linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+    background: -webkit-linear-gradient(-180deg, #0bceff  0%, #85dee8 100%);
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
