@@ -206,18 +206,6 @@ nav p {
     margin-top: 8rem;
     border-radius: 10px 10px 0 0;
 }
-
-.link {
-    font-family: "Poppins", sans-serif;
-    padding: 0.5rem 6rem;
-    border-radius: 5px;
-    font-size: 0.8rem;
-    border:rgb(123, 123, 123) 1px solid;
-}
-
-.link-dark {
-    background-color: var(--dark-mode-color);
-}
 .code-nav {
     display: flex;
     justify-content: space-between;
@@ -225,6 +213,33 @@ nav p {
     padding: 1rem;
     border:rgb(123, 123, 123) 1px solid;
     border-radius: 10px;
+}
+.header-link {
+    font-family: "Poppins", sans-serif;
+    padding: 0.5rem 6rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    border:rgb(123, 123, 123) 1px solid;
+}
+
+
+.d-flex {
+    display: flex !important;
+}
+
+.flex-items-center {
+    align-items: center !important;
+}
+
+.flex-justify-between {
+    justify-content: space-between !important;
+}
+.link-dark {
+    background-color: var(--dark-mode-color);
+}
+
+.color-light {
+    fill: #fff;
 }
 .code-window {
     margin-top: 1rem;

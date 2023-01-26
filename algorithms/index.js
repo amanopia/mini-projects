@@ -1,7 +1,8 @@
 const toggleSwitch = document.querySelector('.toggle-switch');
 const toggleContainer = document.querySelector('.toggle-container');
-const codeLink = document.querySelector('.link');
+const headerLink = document.querySelector('.header-link');
 const codeParent = document.querySelector('.code-parent');
+const svgs = document.querySelectorAll("svg");
 
 const body = document.querySelector('body');
 
@@ -31,7 +32,12 @@ toggleSwitch.addEventListener('click', function(){
     // remove the light class
     codeParent.classList.toggle('light')
     // add dark class
-    codeLink.classList.toggle('link-dark');
+    headerLink.classList.toggle('link-dark');
     // remove light class
-    codeLink.classList.toggle('light');
+    headerLink.classList.toggle('light');
+
+    // on the click of the button, toggle the fill to light
+    for(let i = 0; i<svgs.length ; i++){
+        svgs[i].classList.toggle('color-light');
+    }
 })
