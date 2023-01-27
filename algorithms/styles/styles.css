@@ -216,7 +216,8 @@ nav p {
 }
 .header-link {
     font-family: "Poppins", sans-serif;
-    padding: 0.5rem 6rem;
+    padding: 0.5rem 0.5rem;
+    width: 40%;
     border-radius: 5px;
     font-size: 0.8rem;
     border:rgb(123, 123, 123) 1px solid;
