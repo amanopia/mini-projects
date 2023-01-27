@@ -40,6 +40,7 @@ a, p {
     background-color: var(--code-box-color);
 }
 
+/* Horizontal animation*/
 .hidden {
     opacity: 0;
     transition: all 0.4s;
@@ -50,6 +51,19 @@ a, p {
     opacity: 1;
     transition: all 0.4s;
     transform: translateX(0); 
+}
+
+/* Vertical animation */
+.hidden-vertical {
+    opacity: 0;
+    transition: all 0.4s;
+    transform: translateY(-3%);
+}
+
+.show-vertical {
+    opacity: 1;
+    transition: all 0.4s;
+    transform: translateY(0)
 }
 
 /* NAVIGATION */

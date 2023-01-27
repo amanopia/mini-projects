@@ -6,6 +6,7 @@ const svgs = document.querySelectorAll("svg");
 
 const body = document.querySelector('body');
 
+// observer for horizontally animated elements
 const observer = new IntersectionObserver((entries) => {
 
     entries.forEach((entry) => {
@@ -22,6 +23,23 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
+// observer for vertically animated elements
+const observerVertical = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry);
+
+        if(entry.isIntersecting){
+            entry.target.classList.add('show-vertical');
+        } else {
+            entry.target.classList.remove('show-vertical');
+        }
+    })
+})
+const hiddenElementVertical = document.querySelectorAll('.hidden-vertical');
+hiddenElementVertical.forEach((el) => observerVertical.observe(el));
+
+
+// Dark mode toggle listener
 toggleSwitch.addEventListener('click', function(){
     // class to toggle dark mode on body
     body.classList.toggle('dark-mode-color');
